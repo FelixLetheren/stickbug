@@ -3,6 +3,7 @@ import { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
   siteMetadata: {
     siteName: `Rocketmakers`,
+    siteUrl: 'https://www.amiinlockdown.co.uk',
   },
   plugins: [
     {
@@ -17,6 +18,7 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
