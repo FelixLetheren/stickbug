@@ -1111,8 +1111,6 @@ export type SiteFieldsEnum =
   | 'siteMetadata___title'
   | 'siteMetadata___description'
   | 'siteMetadata___siteName'
-  | 'siteMetadata___siteUrl'
-  | 'siteMetadata___companyName'
   | 'port'
   | 'host'
   | 'polyfill'
@@ -1742,16 +1740,12 @@ export type SiteSiteMetadata = {
   title?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['String']>;
   siteName?: Maybe<Scalars['String']>;
-  siteUrl?: Maybe<Scalars['String']>;
-  companyName?: Maybe<Scalars['String']>;
 };
 
 export type SiteSiteMetadataFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
   siteName?: Maybe<StringQueryOperatorInput>;
-  siteUrl?: Maybe<StringQueryOperatorInput>;
-  companyName?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SiteSortInput = {
