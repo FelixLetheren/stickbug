@@ -1404,6 +1404,7 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___codegen'
   | 'pluginCreator___pluginOptions___fileName'
   | 'pluginCreator___pluginOptions___documentPaths'
+  | 'pluginCreator___pluginOptions___logo'
   | 'pluginCreator___pluginOptions___configDir'
   | 'pluginCreator___pluginOptions___babel'
   | 'pluginCreator___pluginOptions___tsNode'
@@ -1595,6 +1596,7 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___codegen'
   | 'pluginOptions___fileName'
   | 'pluginOptions___documentPaths'
+  | 'pluginOptions___logo'
   | 'pluginOptions___configDir'
   | 'pluginOptions___babel'
   | 'pluginOptions___tsNode'
@@ -1713,6 +1715,7 @@ export type SitePluginPluginOptions = {
   codegen?: Maybe<Scalars['Boolean']>;
   fileName?: Maybe<Scalars['String']>;
   documentPaths?: Maybe<Array<Maybe<Scalars['String']>>>;
+  logo?: Maybe<Scalars['String']>;
   configDir?: Maybe<Scalars['String']>;
   babel?: Maybe<Scalars['Boolean']>;
   tsNode?: Maybe<Scalars['Boolean']>;
@@ -1724,6 +1727,7 @@ export type SitePluginPluginOptionsFilterInput = {
   codegen?: Maybe<BooleanQueryOperatorInput>;
   fileName?: Maybe<StringQueryOperatorInput>;
   documentPaths?: Maybe<StringQueryOperatorInput>;
+  logo?: Maybe<StringQueryOperatorInput>;
   configDir?: Maybe<StringQueryOperatorInput>;
   babel?: Maybe<BooleanQueryOperatorInput>;
   tsNode?: Maybe<BooleanQueryOperatorInput>;
